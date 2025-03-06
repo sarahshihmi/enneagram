@@ -1,4 +1,4 @@
-# 📌 Enneagram – AI-Powered Therapist Matching & Chat
+# 📌 Innieagram – AI-Powered Therapist Matching & Chat
 
 🚀 A personalized AI-driven therapy experience where users can connect with **9 AI therapists**—each representing an **Enneagram type**—to receive tailored mental health support.
 
@@ -10,9 +10,9 @@
 - 🔐 **Secure Authentication** – User registration & login system for personalized access.
 
 ## 🛠️ Tech Stack:
-- **Backend:** PHP (Laravel or Core PHP), MySQL, Redis, Nginx
-- **Frontend:** Twig (PHP Templates), Bootstrap 3, Tailwind, jQuery, React
-- **AI Integration:** OpenAI API or Local LLM
+- **Backend:** PHP (Laravel), MySQL, Redis, Nginx
+- **Frontend:** HTML, CSS, React
+- **AI Integration:** OpenAI API (or Local LLM)
 - **Hosting:** XAMPP (Local), Future: Cloud Deployment
 
 ## 📂 Work in Progress
