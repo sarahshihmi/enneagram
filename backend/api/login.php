@@ -2,6 +2,7 @@
 session_start();
 
 include("../config/db.php");
+include("../config/jwt.php");
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
@@ -22,19 +23,18 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
 
         //verify password
         if ($user && password_verify($password, $user["password"])) {
-            $_SESSION["user_id"] = $user['id'];
-            $_SESSION["username"] = $user['username'];
-            $_SESSION["email"] = $user['email'];
+
+            $token = generateJWT($user["id"], $user['username'], $user['email']);
 
             echo json_encode([
                 'message' => 'logged in successfully',
+                'token' => $token,
                 'user' => [
                     'id' => $user['id'],
                     'username' => $user['username'],
                     'email' => $email
 
                 ],
-                'session' => 'Active'
             ]);
 
         } else {

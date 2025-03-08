@@ -1,0 +1,23 @@
+# Ignore environment & sensitive config files
+.env
+config/db.php  # If storing DB credentials here (better to use .env!)
+
+# Ignore Composer dependencies (if using Composer)
+vendor/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs & cache files
+logs/
+*.log
+
+# Ignore XAMPP-related files (optional)
+xamppfiles/
+
+# Ignore JWT private keys (if storing keys)
+jwt_keys/
+
+# Ignore node_modules (if using Node in frontend)
+node_modules/
